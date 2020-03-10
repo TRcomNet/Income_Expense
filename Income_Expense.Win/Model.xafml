@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Logo="BO_Opportunity">
+  <NavigationItems NavigationStyle="Accordion" ShowImages="False" DefaultChildItemsDisplayStyle="List" />
+  <Options UIType="SingleWindowSDI" FormStyle="Standard" ShowTabImage="False" Skin="Basic">
+    <LayoutManagerOptions EnableLayoutGroupImages="False" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SchedulerModuleBase" Version="19.2.4.0" IsNewNode="True" />
+    <SchemaModule Name="SchedulerWindowsFormsModule" Version="19.2.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="19.2.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemWindowsFormsModule" Version="19.2.4.0" IsNewNode="True" />
+  </SchemaModules>
+</Application>

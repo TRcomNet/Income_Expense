@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application Title="Budget Calculation Program" Company="TRCOM.NET" Copyright="2020" Description="THE INCOME EXPENSE BUDGET CALCULATION PROGRAM" Logo="BO_Opportunity">
+  <Options>
+    <LayoutManagerOptions RequiredFieldMark="*" />
+  </Options>
+  <SchemaModules>
+    <SchemaModule Name="SchedulerModuleBase" Version="19.2.4.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="19.2.4.0" IsNewNode="True" />
+  </SchemaModules>
+  <Views>
+    <DetailView Id="Categories_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Categories" RelativeSize="16.133333333333333">
+              <LayoutGroup Id="Categories_col1" RelativeSize="50">
+                <LayoutItem Id="CategoryName" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="CategoryColor" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+              <LayoutGroup Id="Categories_col2" RelativeSize="50">
+                <LayoutItem Id="CategoryIcon" RelativeSize="36.363636363636367" />
+                <LayoutItem Id="Incomes" RelativeSize="27.272727272727273" />
+                <LayoutItem Id="Expenses" RelativeSize="36.363636363636367" />
+              </LayoutGroup>
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" Direction="Horizontal" RelativeSize="83.86666666666666">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <ListView Id="Categories_ListView">
+      <Columns>
+        <ColumnInfo Id="Expenses" Index="-1" />
+        <ColumnInfo Id="Incomes" Index="-1" />
+        <ColumnInfo Id="CategoryName" Width="285" SortIndex="0" SortOrder="Ascending" />
+        <ColumnInfo Id="CategoryColor" Width="101" />
+      </Columns>
+    </ListView>
+    <ListView Id="Categories_LookupListView">
+      <Columns>
+        <ColumnInfo Id="CategoryTypeName.CategoryTypeName" PropertyName="CategoryTypeName.CategoryTypeName" Index="-1" IsNewNode="True" />
+        <ColumnInfo Id="CategoryName" Width="223" />
+        <ColumnInfo Id="CategoryTypeName" PropertyName="CategoryTypeName" Index="1" Width="159" IsNewNode="True" />
+      </Columns>
+    </ListView>
+    <DetailView Id="CategoryTypes_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="CategoryTypes" RelativeSize="5.0666666666666664" />
+            <LayoutGroup Id="XPObject" Caption="Oid" Direction="Horizontal" RelativeSize="94.933333333333337">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Currencies_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="100">
+            <LayoutGroup Id="Currencies" RelativeSize="5.0666666666666664">
+              <LayoutItem Id="CurrenciesName" RelativeSize="100" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" Direction="Horizontal" RelativeSize="94.933333333333337">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Expenses_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="11.466666666666667">
+            <LayoutGroup Id="Expenses" RelativeSize="100">
+              <LayoutItem Id="ExpenseName" RelativeSize="37.2093023255814" />
+              <LayoutItem Id="Amount" RelativeSize="27.906976744186046" />
+              <LayoutItem Id="Currencies" RelativeSize="34.883720930232556" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" Direction="Horizontal" RelativeSize="77.066666666666663" Removed="True">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+    <DetailView Id="Incomes_DetailView">
+      <Layout>
+        <LayoutGroup Id="Main" RelativeSize="100">
+          <LayoutGroup Id="SimpleEditors" RelativeSize="11.466666666666667">
+            <LayoutGroup Id="Incomes" RelativeSize="100">
+              <LayoutItem Id="IncomeName" RelativeSize="37.2093023255814" />
+              <LayoutItem Id="Amount" RelativeSize="27.906976744186046" />
+              <LayoutItem Id="Currencies" RelativeSize="34.883720930232556" />
+            </LayoutGroup>
+            <LayoutGroup Id="XPObject" Caption="Oid" Direction="Horizontal" RelativeSize="77.066666666666663" Removed="True">
+              <LayoutItem Id="Oid" Removed="True" />
+            </LayoutGroup>
+          </LayoutGroup>
+        </LayoutGroup>
+      </Layout>
+    </DetailView>
+  </Views>
+</Application>
