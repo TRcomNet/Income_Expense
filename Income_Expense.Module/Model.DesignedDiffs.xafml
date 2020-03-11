@@ -1,5 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Application Title="Budget Calculation Program" Company="TRCOM.NET" Copyright="2020" Description="THE INCOME EXPENSE BUDGET CALCULATION PROGRAM" Logo="BO_Opportunity">
+  <NavigationItems>
+    <Items>
+      <Item Id="Default" Caption="Budget Calculation">
+        <Items>
+          <Item Id="Incomes_ListView" Index="0" ImageName="AccountingNumberFormat" />
+          <Item Id="Expenses_ListView" Index="1" ImageName="ExpandCollapseButtonPivotTable" />
+          <Item Id="Categories_ListView" Index="2" ImageName="BO_Category" />
+          <Item Id="CategoryTypes_ListView" Index="3" ImageName="BO_StateMachine" />
+          <Item Id="Currencies_ListView" Index="4" ImageName="BO_Localization" />
+          <Item Id="Event_ListView" Visible="False" />
+        </Items>
+      </Item>
+      <Item Id="Reports" Visible="False" />
+    </Items>
+  </NavigationItems>
   <Options>
     <LayoutManagerOptions RequiredFieldMark="*" />
   </Options>
@@ -38,7 +53,7 @@
         <ColumnInfo Id="CategoryColor" Width="101" />
       </Columns>
     </ListView>
-    <ListView Id="Categories_LookupListView">
+    <ListView Id="Categories_LookupListView" AllowDelete="False">
       <Columns>
         <ColumnInfo Id="CategoryTypeName.CategoryTypeName" PropertyName="CategoryTypeName.CategoryTypeName" Index="-1" IsNewNode="True" />
         <ColumnInfo Id="CategoryName" Width="223" />
